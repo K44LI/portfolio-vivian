@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f4f3ef;
+    color: #171717;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    min-height: 75vh;
+    padding: 2rem 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-bottom: 1px solid #171717;
+}
+
+header h1 {
+    max-width: 900px;
+    margin: 4rem 0 0;
+    font-size: clamp(3rem, 9vw, 8rem);
+    line-height: 0.9;
+    letter-spacing: -0.06em;
+    font-weight: 700;
+}
+
+header h2 {
+    margin: 2rem 0;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    border-top: 1px solid #171717;
+    padding-top: 1rem;
+}
+
+nav a {
+    color: #171717;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: opacity 0.3s ease;
+}
+
+nav a:hover {
+    opacity: 0.45;
+}
+
+.conteudo {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#sobre-mim {
+    padding: 8rem 0;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 3rem;
+    border-bottom: 1px solid #171717;
+}
+
+#sobre-mim h2 {
+    margin: 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+}
+
+#sobre-mim p {
+    max-width: 700px;
+    margin: 0 0 3rem;
+    font-size: clamp(1.4rem, 3vw, 2.7rem);
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+}
+
+#sobre-mim strong {
+    font-weight: 700;
+}
+
+#sobre-mim em {
+    font-style: normal;
+}
+
+#interesses {
+    padding: 8rem 0;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 3rem;
+    border-bottom: 1px solid #171717;
+}
+
+#interesses h2 {
+    margin: 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-weight: 500;
+}
+
+#interesses p {
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+
+#interesses ul {
+    list-style: none;
+    padding: 0;
+    margin: 3rem 0 0;
+}
+
+#interesses li {
+    padding: 1.5rem 0;
+    border-top: 1px solid #171717;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    letter-spacing: -0.04em;
+}
+
+#interesses li:last-child {
+    border-bottom: 1px solid #171717;
+}
+
+footer {
+    padding: 3rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171717;
+    color: #f4f3ef;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        min-height: 70vh;
+        padding: 1.5rem;
+    }
+
+    header h1 {
+        margin-top: 3rem;
+        font-size: clamp(3rem, 16vw, 5rem);
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .conteudo {
+        width: 88%;
+    }
+
+    #sobre-mim,
+    #interesses {
+        grid-template-columns: 1fr;
+        padding: 5rem 0;
+        gap: 2rem;
+    }
+
+    #sobre-mim p {
+        font-size: 1.5rem;
+    }
+
+    #interesses li {
+        font-size: 1.7rem;
+    }
+
+    footer {
+        padding: 2rem 1.5rem;
+    }
+}
