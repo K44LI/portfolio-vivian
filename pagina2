@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meus projetos - Vivian</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Meus projetos</h1>
+
+        <nav>
+            <a href="sobre-mim.html">Voltar para a página inicial</a>
+        </nav>
+    </header>
+
+    <main class="conteudo">
+
+        <section id="projetos">
+
+            <h2>Projetos em desenvolvimento</h2>
+
+            <p>
+                Aqui estarão listados alguns dos projetos que venho desenvolvendo durante o curso.
+            </p>
+
+            <ul>
+                <li>Projeto de portfólio pessoal</li>
+            </ul>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; 2026 Vivian Gabrielly Lacerda de Aquino.
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
